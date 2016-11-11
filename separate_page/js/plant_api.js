@@ -31,7 +31,7 @@ function dataToPagePanel(data) {
     for (resourceItem in data) {
       //console.log(resourceItem);
       tableHTML += '<li class="list-group-item">';
-      tableHTML += data[resourceItem].name + ": " + data[resourceItem].description;
+      tableHTML += "<strong>" + data[resourceItem].name + "</strong>: " + data[resourceItem].description;
       tableHTML += "</li>"
     };
     tableHTML += "</ul>"
