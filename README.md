@@ -1,24 +1,5 @@
-# README
+# Simple Plant API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The point of this project is to implement a Rails backend api such that it can be interacted with outside of the rails application itself. The app allows you to add plants to the database via the api that was implemented.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Uses Rails, Bootstrap, jQuery, and Rack CORS. 

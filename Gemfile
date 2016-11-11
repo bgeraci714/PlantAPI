@@ -28,6 +28,10 @@ gem 'kaminari'
 # allows for cross-origin resource sharing (CORS)
 gem 'rack-cors', :require => 'rack/cors'
 
+# provides a framework and language for testing the code
+gem 'rspec'
+gem 'rspec-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -46,6 +50,14 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do
