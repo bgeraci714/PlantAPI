@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.0/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-11-11T14:43:02-05:00">2016-11-11T14:43:02-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-11-27T20:56:17-05:00">2016-11-27T20:56:17-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.21%</span></span>
+    (<span class="covered_percent"><span class="red">77.27%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.05
+       <span class="red">
+         0.87
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>10</b> files in total.
-    <b>91</b> relevant lines. 
-    <span class="green"><b>83</b> lines covered</span> and
-    <span class="red"><b>8</b> lines missed </span>
+    <b>88</b> relevant lines. 
+    <span class="green"><b>68</b> lines covered</span> and
+    <span class="red"><b>20</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#844b81e1763b01d2a87a5a1b044009477cda8796" class="src_link" title="app/controllers/api/base_controller.rb">app/controllers/api/base_controller.rb</a></td>
-        <td class="yellow strong">80.95 %</td>
+        <td class="red strong">69.05 %</td>
         <td>107</td>
         <td>42</td>
-        <td>34</td>
-        <td>8</td>
-        <td>1.1</td>
+        <td>29</td>
+        <td>13</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -132,12 +132,12 @@
       
       <tr>
         <td class="strong"><a href="#647e58c2d6951b9a8dc8b1cc56f82410c94a346a" class="src_link" title="spec/requests/api/plants_spec.rb">spec/requests/api/plants_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">61.11 %</td>
         <td>50</td>
-        <td>21</td>
-        <td>21</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>18</td>
+        <td>11</td>
+        <td>7</td>
+        <td>0.6</td>
       </tr>
       
       <tr>
@@ -169,11 +169,11 @@
         <div class="source_table" id="844b81e1763b01d2a87a5a1b044009477cda8796">
   <div class="header">
     <h3>app/controllers/api/base_controller.rb</h3>
-    <h4><span class="yellow">80.95 %</span> covered</h4>
+    <h4><span class="red">69.05 %</span> covered</h4>
     <div>
       <b>42</b> relevant lines. 
-      <span class="green"><b>34</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>13</b> lines missed.</span>
     </div>
   </div>
   
@@ -252,8 +252,8 @@
           <code class="ruby">      def get_resource</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
           
           <code class="ruby">        instance_variable_get(&quot;@#{resource_name}&quot;)</code>
         </li>
@@ -402,8 +402,8 @@
           <code class="ruby">      def resource_name</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="38">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="4" data-linenumber="38">
+          <span class="hits">4</span>
           
           <code class="ruby">        @resource_name ||= self.controller_name.singularize</code>
         </li>
@@ -480,14 +480,14 @@
           <code class="ruby">      def set_resource(resource = nil)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
           
           <code class="ruby">        resource ||= resource_class.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
           
           <code class="ruby">        instance_variable_set(&quot;@#{resource_name}&quot;, resource)</code>
         </li>
@@ -552,14 +552,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="63">
+          
           
           <code class="ruby">        if get_resource.save</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="64">
+          
           
           <code class="ruby">          render :json =&gt; get_resource, status: :created</code>
         </li>
@@ -1453,11 +1453,11 @@
         <div class="source_table" id="647e58c2d6951b9a8dc8b1cc56f82410c94a346a">
   <div class="header">
     <h3>spec/requests/api/plants_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">61.11 %</span> covered</h4>
     <div>
-      <b>21</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>18</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
   
@@ -1494,8 +1494,8 @@
           <code class="ruby">    Plant.create(name: &quot;A plant named Tim&quot;, description: &quot;Likes water.&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
-          
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby"></code>
         </li>
@@ -1506,14 +1506,14 @@
           <code class="ruby">    get &quot;/api/plants&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
+          
           
           <code class="ruby">    json = JSON.parse(response.body)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
+          
           
           <code class="ruby">    expect(response).to be_success</code>
         </li>
@@ -1530,14 +1530,14 @@
           <code class="ruby">    test_plant_json = {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
-          
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">      &quot;created_at&quot; =&gt; &quot;2016-11-11T19:41:02.246Z&quot;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
-          
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
           <code class="ruby">      &quot;description&quot; =&gt; &quot;Likes water.&quot;,</code>
         </li>
@@ -1566,26 +1566,26 @@
           <code class="ruby">      }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="18">
+          
           
           <code class="ruby">    expect(json[-1][&quot;name&quot;]).to eq test_plant_json[&quot;name&quot;]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="19">
+          
           
           <code class="ruby">    expect(json[-1][&quot;description&quot;]).to eq test_plant_json[&quot;description&quot;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
-          
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
-          
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
           <code class="ruby"></code>
         </li>
@@ -1596,32 +1596,32 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="missed" data-hits="0" data-linenumber="23">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="missed" data-hits="0" data-linenumber="24">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
           
           <code class="ruby">  it &quot;lets users create new plants&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="26">
+          
           
           <code class="ruby">    headers = {&#39;CONTENT_TYPE&#39; =&gt; &#39;application/json&#39;}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
           
           <code class="ruby">    plant_json = {</code>
         </li>
@@ -1632,13 +1632,13 @@
           <code class="ruby">      plant: {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="missed" data-hits="0" data-linenumber="29">
           
           
           <code class="ruby">        name: &quot;test plant&quot;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="missed" data-hits="0" data-linenumber="30">
           
           
           <code class="ruby">        description: &quot;my plant&quot;</code>
@@ -1650,7 +1650,7 @@
           <code class="ruby">      }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="missed" data-hits="0" data-linenumber="32">
           
           
           <code class="ruby">    }.to_json</code>
@@ -1662,14 +1662,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="34">
+          
           
           <code class="ruby">    post &quot;/api/plants&quot;, plant_json, headers</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="35">
+          
           
           <code class="ruby">    expect(response).to be_success</code>
         </li>
@@ -1692,20 +1692,20 @@
           <code class="ruby">    # database testing</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="39">
+          
           
           <code class="ruby">    new_plant = Plant.last</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="40">
+          
           
           <code class="ruby">    expect(new_plant.name).to eq &quot;test plant&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="41">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="41">
+          
           
           <code class="ruby">    expect(new_plant.description).to eq &quot;my plant&quot;</code>
         </li>
@@ -1716,14 +1716,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="43">
+          
           
           <code class="ruby">    json = JSON.parse(response.body)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="44">
+          
           
           <code class="ruby">    expect(response).to be_success</code>
         </li>
@@ -1734,8 +1734,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="46">
+          
           
           <code class="ruby">    expect(json[&quot;name&quot;]).to eq new_plant.name</code>
         </li>
